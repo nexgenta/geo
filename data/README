@@ -55,3 +55,12 @@ Files included
 	(“France, Metropolitan”) has been marked as deleted, but the corresponding
 	alpha codes (FX, FXX) are marked as reserved. Thus, two entries
 	are present in the list, one for the numeric, one for the alphabetic.
+
+10-e212-mcc.csv
+
+	ITU-T E.212 Mobile Country Code (MCC) list. This file maps MCCs to countries
+	by way of each country’s ISO 3166-1 alpha-2 code.
+	
+	The entry for MCC 901 has anISO 3166-1 alpha-2 code of “XX”. This is because
+	MCC 901 is used by mobile telephony networks which are non-country-specific,
+	such as satellite telephony operators.
