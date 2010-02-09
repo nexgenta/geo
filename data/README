@@ -1,0 +1,57 @@
+This data is collected from a range of sources, and should hopefully be
+accurate at the time of committing.
+
+No copyright is claimed over the data itself; however please do not
+redistribute the files verbatim claiming that you spent the time
+assembling and cross-referencing them when you didn’t.
+
+Please feel free to fork and submit patches.
+
+- Mo McRoberts <mo.mcroberts@nexgenta.com>
+
+Files included
+==============
+
+00-georegion.csv
+
+	Taken from the United Nations Statistics Division M49 list of
+	geographical regions. Note that M49 numeric codes share numbering
+	space with ISO 3166-1. The entries form a tree, with the first
+	entry (1 - World) at the top level.
+
+01-countries.csv
+
+	This is a combination of UNSD, ISO and other data which shares
+	the same numbering and namespaces.
+	
+	Each entry has a status of “active”, “transitional”, “deleted”,
+	“unsd-reserved”, “special-reservation”, “reserved”,
+	“indeterminate-reservation” or “user-assigned”.
+	
+	“active” codes should all have an M49 parent code associated
+	with them.
+	
+	“unsd-reserved” means the entry is used exclusively by the UN
+	Statistics Division and not ISO 3166-1.
+	
+	“user-assigned” entries are maintained by convention and are within
+	the ranges defined by ISO for “user” assignments.
+	
+	“indeterminate-reservation” entries are those which are not explicitly
+	defined by ISO, but are used alongside ISO 3166-1 alpha codes and so
+	share a namespace through common use.
+	
+	“deleted” entries should no longer be used.
+	
+	“transitional” entries are in the process of being phased out.
+	
+	“reserved” and “special-reservation” are entries which have been
+	explicitly reserved by ISO. The former are defined by ISO, whereas the
+	latter are reserved by agreement and so will not appear in ISO 3166-1.
+	
+	Because numeric and alphabetic codes may change and have differing
+	statuses, multiple non-active entries for a country may exist with
+	only partial coding information: for example, the numeric code 249
+	(“France, Metropolitan”) has been marked as deleted, but the corresponding
+	alpha codes (FX, FXX) are marked as reserved. Thus, two entries
+	are present in the list, one for the numeric, one for the alphabetic.
